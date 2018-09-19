@@ -1,0 +1,59 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 504 ciObject found
+ciMethod java/lang/Object <init> ()V 4097 1 1470202 0 0
+ciMethod java/lang/Object getClass ()Ljava/lang/Class; 3073 1 384 0 -1
+ciMethod java/lang/Object hashCode ()I 2049 1 256 0 -1
+ciMethod java/lang/Object equals (Ljava/lang/Object;)Z 2057 1 6204 0 -1
+ciMethod java/lang/String equals (Ljava/lang/Object;)Z 1977 16513 19464 0 -1
+ciMethod java/lang/String hashCode ()I 2825 32769 1550 0 320
+ciMethod java/lang/String concat (Ljava/lang/String;)Ljava/lang/String; 3073 1 6708 0 -1
+ciMethod java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String; 0 0 1 0 0
+ciMethod java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V 8193 1 1024 0 -1
+ciMethod java/lang/Throwable getMessage ()Ljava/lang/String; 33 1 4 0 -1
+ciMethod java/lang/ref/Reference get ()Ljava/lang/Object; 1025 1 128 0 -1
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;)V 3145 1 6526 0 -1
+ciMethod java/lang/ref/Reference <init> (Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V 2057 1 84929 0 -1
+ciMethod java/lang/ref/WeakReference <init> (Ljava/lang/Object;)V 2065 1 5666 0 -1
+ciMethod java/util/Map isEmpty ()Z 0 0 1 0 -1
+ciMethod java/util/Map containsKey (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/lang/Float isNaN (F)Z 3073 1 11646 0 0
+ciMethod java/lang/Double doubleValue ()D 3361 1 14463 0 -1
+ciMethod java/lang/Double doubleToLongBits (D)J 2049 1 62923 0 -1
+ciMethod java/util/Collection size ()I 0 0 1 0 -1
+ciMethod java/util/List size ()I 0 0 1 0 -1
+ciMethod java/util/List isEmpty ()Z 0 0 1 0 -1
+ciMethod java/util/List get (I)Ljava/lang/Object; 0 0 1 0 -1
+ciMethod java/util/AbstractList <init> ()V 2065 1 83890 0 32
+ciMethod java/util/AbstractCollection <init> ()V 2265 1 96588 0 32
+ciMethod java/util/ArrayList <init> ()V 457 1 50083 0 64
+ciMethod java/util/ArrayList size ()I 1321 1 165 0 0
+ciMethod java/util/ArrayList isEmpty ()Z 4097 1 6090 0 64
+ciMethod java/util/ArrayList elementData (I)Ljava/lang/Object; 2129 1 26758 0 0
+ciMethod java/util/ArrayList get (I)Ljava/lang/Object; 2089 1 25906 0 128
+ciMethod java/util/ArrayList rangeCheck (I)V 2049 1 25953 0 64
+ciMethod java/util/Set addAll (Ljava/util/Collection;)Z 0 0 1 0 -1
+ciMethod java/util/Set retainAll (Ljava/util/Collection;)Z 0 0 1 0 -1
+ciMethod java/util/Set equals (Ljava/lang/Object;)Z 0 0 1 0 -1
+ciMethod java/util/Set hashCode ()I 0 0 1 0 -1
+ciMethod java/util/Collections$EmptyList isEmpty ()Z 1033 1 129 0 0
+ciMethod java/util/AbstractMap <init> ()V 985 1 14630 0 32
+ciMethod java/util/Collections$UnmodifiableList get (I)Ljava/lang/Object; 49553 1 12467 0 224
+ciMethod java/util/Collections$UnmodifiableCollection size ()I 4097 1 10481 0 96
+ciMethod java/util/HashMap hash (Ljava/lang/Object;)I 2329 1 70875 0 0
+ciMethod java/util/HashMap comparableClassFor (Ljava/lang/Object;)Ljava/lang/Class; 2481 1 310 0 -1
+ciMethod java/util/HashMap compareComparables (Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)I 0 0 1 0 -1
+ciMethod java/util/HashMap tableSizeFor (I)I 2137 1 2628 0 0
+ciMethod java/util/HashMap <init> (IF)V 89 1 2127 0 0
+ciMethod java/util/HashMap <init> (I)V 89 1 2096 0 0
+ciMethod java/util/HashMap <init> ()V 737 1 7311 0 32
+ciMethod java/util/HashMap isEmpty ()Z 4097 1 9816 0 64
+ciMethod java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object; 3457 1 35835 0 704
+ciMethod java/util/HashMap getNode (ILjava/lang/Object;)Ljava/util/HashMap$Node; 4097 137 12903 0 576
+ciMethod java/util/HashMap containsKey (Ljava/lang/Object;)Z 241 1 8962 0 704
+ciMethod java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 2953 1 20153 0 192
+ciMethod java/util/HashMap putVal (ILjava/lang/Object;Ljava/lang/Object;ZZ)Ljava/lang/Object; 2977 353 14659 0 2240
+ciMethod java/util/HashMap resize ()[Ljava/util/HashMap$Node; 353 7969 

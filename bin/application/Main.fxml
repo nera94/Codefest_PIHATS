@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.control.TreeTableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="656.0" prefWidth="1357.0" style="-fx-background-color: #f7f7f8;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane layoutX="-1.0" opacity="0.93" prefHeight="699.0" prefWidth="1359.0" style="-fx-background-color: #212120;">
+         <children>
+            <Separator layoutX="15.0" layoutY="277.0" opacity="0.6" prefHeight="3.0" prefWidth="260.0" />
+            <Separator layoutX="16.0" layoutY="11.0" opacity="0.6" prefHeight="3.0" prefWidth="260.0" />
+            <JFXButton id="btn" fx:id="btndash" layoutX="50.0" layoutY="313.0" onAction="#dash" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Dashboard" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btn" fx:id="btnitem" layoutX="50.0" layoutY="370.0" onAction="#item" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Item Details" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btn" layoutX="51.0" layoutY="427.0" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Error Report" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btn" layoutX="52.0" layoutY="484.0" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Employee Details" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="btn" layoutX="53.0" layoutY="542.0" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Generate Reports" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="67.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/User_login_man_profile_account.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="186.0" prefHeight="67.0" prefWidth="260.0" text="Name         :       Y.N.Senanayake&#10;identity       :      CB67258&#10;Location     :      Malabe&#10;Position      :      Manager" textFill="#96989adb" />
+            <JFXButton id="btn" layoutX="52.0" layoutY="602.0" prefHeight="48.0" prefWidth="178.0" style="-fx-border-radius: 40px; -fx-background-radius: 40px; -fx-background-color: #fff;" stylesheets="@css/button.css" text="Sensor Switch On/Off" textFill="#907474">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </JFXButton>
+            <AnchorPane fx:id="itempane" layoutX="290.0" prefHeight="715.0" prefWidth="1069.0" style="-fx-background-color: #ffff;">
+               <children>
+                  <Label layoutX="9.0" layoutY="-2.0" prefHeight="37.0" prefWidth="214.0" text="Item Details" textFill="#6b6a6a">
+                     <font>
+                        <Font name="Bell MT" size="22.0" />
+                     </font>
+                  </Label>
+                  <JFXTreeTableView fx:id="itemview" layoutX="535.0" layoutY="119.0" prefHeight="531.0" prefWidth="517.0">
+                     <columns>
+                        <TreeTableColumn fx:id="itemcol" prefWidth="75.0" text=" Item &#10;Name" />
+                        <TreeTableColumn fx:id="feature1col" prefWidth="75.0" text="Feature1" />
+                        <TreeTableColumn fx:id="feature2col" prefWidth="75.0" text="Feature2" />
+                        <TreeTableColumn fx:id="feature3col" prefWidth="75.0" text="Feature3" />
+                        <TreeTableColumn fx:id="feature4col" prefWidth="75.0" text="Feature4" />
+                        <TreeTableColumn fx:id="feature5col" prefWidth="75.0" text="Feature5" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </JFXTreeTableView>
+                  <Label layoutX="-35.0" layoutY="55.0" prefHeight="55.0" prefWidth="56.0" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #4f93fe; -fx-background-color: #4f93fe;" text="   P" textFill="#6e6f6f">
+                     <font>
+                        <Font name="Bell MT Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <BarChart fx:id="barchat2" layoutX="31.0" layoutY="83.0" prefHeight="612.0" prefWidth="471.0" title="Product Details">
+                     <xAxis>
+                        <CategoryAxis label="Item Name" side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis label="Features" side="LEFT" tickLabelRotation="-36.9" />
+                     </yAxis>
+                  </BarChart>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="dashpane" layoutX="289.0" prefHeight="699.0" prefWidth="1061.0" style="-fx-background-color: #f4f3f2;">
+               <children>
+                  <Label layoutX="6.0" layoutY="2.0" prefHeight="37.0" prefWidth="290.0" text="Dashboard" textFill="#6b6a6a">
+                     <font>
+                        <Font name="Bell MT" size="22.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="61.0" layoutY="264.0" prefHeight="381.0" prefWidth="362.0" style="-fx-background-color: #fff; -fx-border-width: 20px; -fx-border-color: #fff;">
+                     <children>
+                        <PieChart fx:id="pie_chart" layoutX="25.0" layoutY="9.0" prefHeight="346.0" prefWidth="322.0" style="-fx-background-color: #fff;" stylesheets="@css/piechart.css" title="Items" />
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="-34.0" layoutY="56.0" prefHeight="55.0" prefWidth="56.0" style="-fx-background-radius: 50px; -fx-border-radius: 50px; -fx-border-color: #4f93fe; -fx-background-color: #4f93fe;" text="   P" textFill="#6e6f6f">
+                     <font>
+                        <Font name="Bell MT Italic" size="26.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="69.0" layoutY="75.0" prefHeight="150.0" prefWidth="229.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="19.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/databases-icon-png-7.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="16.0" layoutY="95.0" prefHeight="3.0" prefWidth="197.0" />
+                        <Label layoutX="140.0" layoutY="27.0" text="Capacity">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="156.0" layoutY="53.0" prefHeight="21.0" prefWidth="64.0" text="105GB">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="113.0" prefHeight="21.0" prefWidth="99.0" text="Update Now">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="29.0" layoutY="112.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/available-updates.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="791.0" layoutY="74.0" prefHeight="150.0" prefWidth="229.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+                     <children>
+                        <ImageView fitHeight="55.0" fitWidth="76.0" layoutX="27.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/twitter_PNG29.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="16.0" layoutY="95.0" prefHeight="3.0" prefWidth="197.0" />
+                        <Label layoutX="140.0" layoutY="27.0" text="Followers">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="189.0" layoutY="53.0" prefHeight="21.0" prefWidth="32.0" text="+45">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="113.0" prefHeight="21.0" prefWidth="99.0" text="Update Now">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="29.0" layoutY="112.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/available-updates.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="551.0" layoutY="75.0" prefHeight="150.0" prefWidth="229.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+                     <children>
+                        <ImageView fitHeight="55.0" fitWidth="76.0" layoutX="27.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/increase-graph-png-7.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="16.0" layoutY="95.0" prefHeight="3.0" prefWidth="197.0" />
+                        <Label layoutX="177.0" layoutY="27.0" text="Error">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="189.0" layoutY="53.0" prefHeight="21.0" prefWidth="32.0" text="+23">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="113.0" prefHeight="21.0" prefWidth="120.0" text="In the last hour">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="29.0" layoutY="112.0" opacity="0.77" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/b21b7374b8048bce71e5e28af1dd7a70-alarm-clock-by-vexels.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="309.0" layoutY="75.0" prefHeight="150.0" prefWidth="229.0" style="-fx-background-color: #fff; -fx-background-radius: 20px;">
+                     <children>
+                        <ImageView fitHeight="48.0" fitWidth="56.0" layoutX="27.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../Desktop/53-512.png" />
+                           </image>
+                        </ImageView>
+                        <Separator layoutX="16.0" layoutY="95.0" prefHeight="3.0" prefWidth="197.0" />
+                        <Label layoutX="140.0" layoutY="27.0" text="Revenue">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="156.0" layoutY="53.0" prefHeight="21.0" prefWidth="64.0" text="\$1,345">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="113.0" prefHeight="21.0" prefWidth="99.0" text="Last day">
+                           <font>
+                              <Font name="Arial" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="21.0" fitWidth="26.0" layoutX="29.0" layoutY="112.0" opacity="0.66" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../img/b21b7374b8048bce71e5e28af1dd7a70-alarm-clock-by-vexels.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <LineChart fx:id="linechart" layoutX="491.0" layoutY="261.0" prefHeight="422.0" prefWidth="494.0" title="Product Details">
+                    <xAxis>
+                      <CategoryAxis label="Item" side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis label="Weight" side="LEFT" tickLabelRotation="-33.7" />
+                    </yAxis>
+                  </LineChart>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
